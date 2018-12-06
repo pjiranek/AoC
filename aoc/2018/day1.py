@@ -20,7 +20,12 @@ def repeated_frequency(freq_changes):
                 freq_seen.add(freq)
 
 
-freq_changes = [int(line) for line in utils.read_input('input1.txt')]
+def main():
+    freq_changes = [int(line) for line in utils.read_input('input1.txt')]
 
-print('Part 1:', final_frequency(freq_changes))
-print('Part 2:', repeated_frequency(freq_changes))
+    print('Part 1:', final_frequency(freq_changes))
+    print('Part 2:', repeated_frequency(freq_changes))
+
+
+if __name__ == '__main__':
+    main()
